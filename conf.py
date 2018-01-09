@@ -1,26 +1,27 @@
 # -*- coding: utf-8 -*-
 
 import alagitpull
+
 alagitpull.projects = [
     {
-        'name': 'LumberJack',
-        'url': 'https://github.com/clarkzjw/LumberJack',
-    },
-    {
-        'name': 'nginx-proxy-google',
-        'url': 'https://github.com/clarkzjw/nginx-proxy-google',
+        'name': 'Dehaze',
+        'url': 'https://github.com/clarkzjw/Dehaze'
     },
     {
         'name': 'GuidedFilter',
         'url': 'https://github.com/clarkzjw/GuidedFilter',
     },
     {
+        'name': 'LumberJack',
+        'url': 'https://github.com/clarkzjw/LumberJack',
+    },
+    {
         'name': 'one-two-three...infinity',
         'url': 'https://github.com/clarkzjw/one-two-three...infinity'
     },
     {
-        'name': 'Dehaze',
-        'url': 'https://github.com/clarkzjw/Dehaze'
+        'name': 'nginx-proxy-google',
+        'url': 'https://github.com/clarkzjw/nginx-proxy-google',
     },
     {
         'name': 'brainfuck',
@@ -29,8 +30,8 @@ alagitpull.projects = [
 ]
 
 extensions = [
-  'sphinx.ext.autodoc', 'sphinx.ext.doctest', 'sphinx.ext.intersphinx',
-  'sphinx.ext.todo', 'sphinx.ext.viewcode', 'alagitpull'
+    'sphinx.ext.autodoc', 'sphinx.ext.doctest', 'sphinx.ext.intersphinx',
+    'sphinx.ext.todo', 'sphinx.ext.viewcode', 'alagitpull'
 ]
 
 html_title = 'Hello World'
@@ -41,7 +42,7 @@ source_suffix = '.rst'
 
 master_doc = 'index'
 
-project = u'ring0.xyz 🍵'
+project = u'ring0.xyz'
 copyright = u'2013 - 2018, clarkzjw'  # NOQA
 
 version = '0.0'
@@ -53,7 +54,7 @@ pygments_style = 'sphinx'
 
 html_theme_path = [alagitpull.get_path()]
 html_theme = 'alagitpull'
-html_favicon = 'favicon.ico'
+html_favicon = '_static/favicon.ico'
 html_theme_options = {
     'logo': 'img/bagua.png',
     'projects': alagitpull.projects,
@@ -70,24 +71,20 @@ html_static_path = ['_static']
 
 htmlhelp_basename = 'confuciangentlemansclubdoc'
 
-
 latex_elements = {
 }
 
 latex_documents = [
-  ('index', 'confuciangentlemansclub.tex', u'confucian gentleman\'s',
-   u'Tony Narlock', 'manual'),
+    ('index', 'confuciangentlemansclub.tex', u'confucian gentleman\'s', 'manual'),
 ]
 
 man_pages = [
-    ('index', 'confuciangentlemansclub', u'confucian gentleman\'s club',
-     [u'Tony Narlock'], 1)
+    ('index', 'confuciangentlemansclub', u'confucian gentleman\'s club', 1)
 ]
 
 texinfo_documents = [
-  ('index', 'confuciangentlemansclub', u'confucian gentleman\'s club',
-   u'Tony Narlock', 'confuciangentlemansclub', 'Scribe.',
-   'Miscellaneous'),
+    ('index', 'confuciangentlemansclub', u'confucian gentleman\'s club', 'confuciangentlemansclub', 'Scribe.',
+     'Miscellaneous'),
 ]
 
 intersphinx_mapping = {
