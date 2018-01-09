@@ -56,7 +56,7 @@ html_theme_path = [alagitpull.get_path()]
 html_theme = 'alagitpull'
 html_favicon = '_static/favicon.ico'
 html_theme_options = {
-    'logo': 'img/bagua.png',
+    'logo': 'img/terminal-icon.png',
     'projects': alagitpull.projects,
 }
 html_sidebars = {
