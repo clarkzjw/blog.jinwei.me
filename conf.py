@@ -3,27 +3,28 @@
 import alagitpull
 alagitpull.projects = [
     {
-        'name': 'unihan-etl',
-        'url': 'https://unihan-etl.git-pull.com',
-        'subprojects': [{
-            'name': 'db',
-            'url': 'https://unihan-db.git-pull.com',
-        }]
-    }, {
-        'name': 'tmuxp',
-        'url': 'https://tmuxp.git-pull.com',
-        'subprojects': [{
-            'name': 'libtmux',
-            'url': 'https://libtmux.git-pull.com',
-        }]
+        'name': 'LumberJack',
+        'url': 'https://github.com/clarkzjw/LumberJack',
     },
     {
-        'name': 'vcspull',
-        'url': 'https://vcspull.git-pull.com',
-        'subprojects': [{
-            'name': 'libvcs',
-            'url': 'https://libvcs.git-pull.com',
-        }]
+        'name': 'nginx-proxy-google',
+        'url': 'https://github.com/clarkzjw/nginx-proxy-google',
+    },
+    {
+        'name': 'GuidedFilter',
+        'url': 'https://github.com/clarkzjw/GuidedFilter',
+    },
+    {
+        'name': 'one-two-three...infinity',
+        'url': 'https://github.com/clarkzjw/one-two-three...infinity'
+    },
+    {
+        'name': 'Dehaze',
+        'url': 'https://github.com/clarkzjw/Dehaze'
+    },
+    {
+        'name': 'brainfuck',
+        'url': 'https://github.com/clarkzjw/brainfuck'
     }
 ]
 
