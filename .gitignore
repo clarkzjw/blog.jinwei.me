@@ -1,0 +1,12 @@
+# macOS
+.DS_Store
+
+.env
+*.pyc
+*.tar.gz
+*.egg-info
+
+_build
+
+# ignore virtualenvs
+/*env*/
