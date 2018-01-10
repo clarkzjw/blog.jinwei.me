@@ -29,7 +29,7 @@ ENV COMMIT_USER="clarkzjw"
 ENV COMMIT_EMAIL="hello@jinwei.me"
 ENV GIT_TOKEN=""
 
-RUN git clone https://clarkzjw:GIT_TOKEN@github.com/clarkzjw/blog.jinwei.me.git /html && git checkout gh-pages
+RUN git clone https://clarkzjw:$GIT_TOKEN@github.com/clarkzjw/blog.jinwei.me.git /html && git checkout gh-pages
 
 COPY --from=builder /app/_build/html /html
 
