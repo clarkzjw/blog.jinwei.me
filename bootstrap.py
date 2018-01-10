@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python3
 from __future__ import absolute_import, print_function, unicode_literals
 
 import os
@@ -16,9 +16,9 @@ def fail(message):
 
 def has_module(module_name):
     try:
-        import imp
-        imp.find_module(module_name)
-        del imp
+        import implib
+        implib.find_module(module_name)
+        del implib
         return True
     except ImportError:
         return False
@@ -69,12 +69,11 @@ pip_bin = os.path.join(env_dir, 'bin', 'pip')
 python_bin = os.path.join(env_dir, 'bin', 'python')
 virtualenv_bin = which('virtualenv', throw=False)
 virtualenv_exists = os.path.exists(env_dir) and os.path.isfile(python_bin)
-sphinx_requirements_filepath = os.path.join(
-    project_dir, 'requirements.txt')
+sphinx_requirements_filepath = os.path.join(project_dir, 'requirements.txt')
 
 
 try:
-    import virtualenv  # NOQA
+    import virtualenv
 except ImportError:
     message = (
         'Virtualenv is required for this bootstrap to run.\n'
@@ -85,7 +84,7 @@ except ImportError:
 
 
 try:
-    import pip  # NOQA
+    import pip
 except ImportError:
     message = (
         'pip is required for this bootstrap to run.\n'
@@ -96,14 +95,6 @@ except ImportError:
 
 
 def main():
-    if not which('entr', throw=False):
-        message = (
-            '\nentr(1) is used in this app as a cross platform file watcher.'
-            'You can install it via your package manager on most POSIX '
-            'systems. See the site at http://entrproject.org/\n'
-        )
-        print(message)
-
     if not virtualenv_exists:
         virtualenv_bin = which('virtualenv', throw=False)
 
@@ -118,6 +109,7 @@ def main():
 
     if os.path.exists(os.path.join(env_dir, 'build')):
         os.removedirs(os.path.join(env_dir, 'build'))
+
 
 if __name__ == '__main__':
     main()
