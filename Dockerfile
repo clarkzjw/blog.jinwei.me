@@ -27,7 +27,7 @@ WORKDIR /html
 
 ENV COMMIT_USER="clarkzjw"
 ENV COMMIT_EMAIL="hello@jinwei.me"
-ENV GIT_TOKEN=""
+ARG GIT_TOKEN=""
 
 RUN git clone https://clarkzjw:$GIT_TOKEN@github.com/clarkzjw/blog.jinwei.me.git /html && git checkout gh-pages
 
