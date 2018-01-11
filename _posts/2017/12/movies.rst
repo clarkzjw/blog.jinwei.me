@@ -2,9 +2,11 @@
 
 .. _2017movie:
 
+
 2017观影记录
 ===================
 
+:Publish Date: 2017-12-30
 
 2017年马上就结束了。掐指一算，2017年看了好多电影。包括线上和线下电影院的。
 
@@ -67,7 +69,7 @@
 
 简单分析了一下，线下观影的统计
 
-.. image:: ../../_static/img/2017movie.png
+.. image:: ../../../_static/img/2017movie.png
     :alt: 2017movie
     :align: center
 
