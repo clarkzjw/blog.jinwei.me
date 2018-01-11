@@ -29,8 +29,6 @@ def render_template(cwd, template_path, context):
 def main():
 
     filenames = glob.glob("./_build/html/_posts/*/*/*.html")
-    print(filenames)
-
     posts = []
 
     for p in filenames:
