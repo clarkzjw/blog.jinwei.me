@@ -35,7 +35,7 @@ RUN git clone https://clarkzjw:$GIT_TOKEN@github.com/clarkzjw/blog.jinwei.me.git
 
 COPY --from=builder /app/_build/html /html
 
-RUN echo "`date`" >> /html/.lastmodify && git add -A && git commit -m "`date`" && git push origin gh-pages
+RUN echo "`date`" > /html/.lastmodify && git add -A && git commit -m "`date`" && git push origin gh-pages
 
 
 FROM nginx:alpine
