@@ -48,7 +48,7 @@ copyright = u'2013 - 2018, clarkzjw'  # NOQA
 version = '0.0'
 release = '0.0'
 
-exclude_patterns = ['_build', '.venv']
+exclude_patterns = ['_build', '.venv', 'README.rst']
 
 pygments_style = 'sphinx'
 
