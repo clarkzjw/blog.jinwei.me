@@ -14,7 +14,7 @@ ADD . /app
 
 WORKDIR /app
 
-RUN /bin/bash -c "source /app/.venv/bin/activate && make html && make rss"
+RUN /bin/bash -c "source /app/.venv/bin/activate && make html && make rss && cp rss.xml _build/html"
 
 
 FROM alpine:latest
