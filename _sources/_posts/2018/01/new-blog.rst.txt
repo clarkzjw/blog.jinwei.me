@@ -77,6 +77,8 @@ Dockerfile中生成静态html网页，然后在构建的过程中将静态网页
 其中sphinxcontrib.feed和sphinxfeed的功能性更新都停止在2011年，不兼容Python 3，GitHub上有几个fork，但是也基本没有太多的改进。至于
 sphinxcontrib-newsfeed，并不能生成符合RSS规范的输出。。。所以只好自己简单粗暴造一个轮子了！（至少生成的xml能被RSS阅读器认识。。。
 
+RSS 订阅地址是 https://blog.jinwei.me/rss
+
 至于评论嘛。虽然博客流量小，2017年下来一年也没有10条评论，但是作为一个博客，这个功能还是必须得有！考察了目前市面上的评论方案，Disqus现在
 差不多可以算是一家独大了。但是十分不喜欢Disqus。一个页面要加载的无关的数据太多了。然后看到了 `Isso`_ , 第一印象还不错，但是需要自己单独部
 署。为了一年10条评论不到的数量级单独部署似乎成本略高。之前还见到了 `Staticman`_ , 但是这个方案和GitHub的issue绑定，一个博客实例对应
