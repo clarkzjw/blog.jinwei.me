@@ -21,3 +21,31 @@
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
+
+{%- block content %}
+{%- if theme_fixed_sidebar|lower == 'true' %}
+<div class="document">
+    {{ sidebar() }}
+    {%- block document %}
+    <div class="documentwrapper">
+        {%- if render_sidebar %}
+        <div class="bodywrapper">
+            {%- endif %}
+            <div class="body" role="main">
+                {% block body %}
+                {% endblock %}
+                <div class="just-comments" data-allowguests="true" data-apikey="4bb18080-e236-4513-bd72-3a032f35d3bb">
+                </div>
+                <script async src="https://just-comments.com/w.js"></script>
+            </div>
+            {%- if render_sidebar %}
+        </div>
+        {%- endif %}
+    </div>
+    {%- endblock %}
+    <div class="clearer"></div>
+</div>
+{%- else %}
+{{ super() }}
+{%- endif %}
+{%- endblock %}
