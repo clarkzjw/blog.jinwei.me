@@ -13,6 +13,10 @@ Hello World
 Updates
 -------
 
+- *January 2018*
+
+    - :ref:`又一个新的博客 <2018newblog>`
+
 - *December 2017*
 
     - :ref:`2017 观影记录 <2017movie>`
