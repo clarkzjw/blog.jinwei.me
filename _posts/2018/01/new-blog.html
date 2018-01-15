@@ -73,7 +73,8 @@ Dockerfile中生成静态html网页，然后在构建的过程中将静态网页
 之前stage构建出的产物。以我的博客这个项目为例。假如我是想通过image来部署，那么我最终的产物是静态html文件，那么我可能需要一个nginx的基础
 镜像。nginx:alpine 这个基础镜像很小，不到10MB，在Dockerfile里面将html文件COPY进去之后，最终得到的image也只有10MB左右的大小。但是
 之前我们为了得到静态html文件，可能得选用一个python的基础镜像，然后再apt/apk安装一些必要的编译工具，最终只是为了几百kb的html文件，但是
-构建的镜像已经上百MB了。有了multi stage build之后，这个问题便非常好地被解决了。看了下面的Dockerfile之后，整体思路就非常清晰了。</p>
+构建的镜像已经上百MB了。有了multi stage build之后，这个问题便非常好地被解决了。看了下面的Dockerfile之后，整体思路就非常清晰了。目前我
+在本地写完rst文本，然后git push之后，CircleCI会自动进行Dockerfile的构建，然后将编译生成的静态html推送到gh-pages分支。</p>
 <div class="highlight-bash"><div class="highlight"><pre><span></span>FROM python:3.6.0 as builder
 LABEL <span class="nv">maintainer</span><span class="o">=</span>clarkzjw&lt;hello@jinwei.me&gt;
 RUN pip install virtualenv
