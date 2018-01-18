@@ -17,7 +17,6 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-
 <link rel="manifest" href="/manifest.json">
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
@@ -29,14 +28,14 @@
 
 {%- block content %}
 {%- if theme_fixed_sidebar|lower == 'true' %}
-<div class="document">
+<div class="document han-init-context">
     {{ sidebar() }}
     {%- block document %}
     <div class="documentwrapper">
         {%- if render_sidebar %}
         <div class="bodywrapper">
             {%- endif %}
-            <div class="body han-init-context" role="main">
+            <div class="body" role="main">
                 {% block body %}
                 {% endblock %}
                 <div class="just-comments"
@@ -46,7 +45,6 @@
                 <script async defer src="https://just-comments.com/w.js"></script>
                 <script async defer src="https://buttons.github.io/buttons.js"></script>
                 <script async defer src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                <!--<script type="text/javascript" src="../../../_static/han.min.js"></script>-->
             </div>
             {%- if render_sidebar %}
         </div>
@@ -62,7 +60,4 @@
 
 {%- block footer -%}
 <script async defer type="text/javascript" src="../../../_static/han.min.js"></script>
-<script>
-Han.init()
-</script>
 {%- endblock %}
