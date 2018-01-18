@@ -1,7 +1,7 @@
-import os
-import jinja2
-
 import glob
+import os
+
+import jinja2
 from bs4 import BeautifulSoup
 
 
@@ -31,16 +31,18 @@ def main():
     filenames = glob.glob("./_build/html/_posts/*/*/*.html")
     posts = []
 
-    for p in filenames:
-        soup = BeautifulSoup(open(p), "html5lib")
+    for file in filenames:
+        soup = BeautifulSoup(open(file), "html5lib")
         body = soup.find_all("div", class_="body")[0].text
 
         posts.append({
             "title": soup.title.string,
             "body": body,
             "date_rss": body[body.find("Publish Date:")+13:body.find("Publish Date:")+23],
-            "permalink": "/".join(p.split("/")[3:])
+            "permalink": "/".join(file.split("/")[3:])
         })
+        with open(file, "w") as file:
+            file.write(str(BeautifulSoup(str(soup).replace("\n", "").replace("\r", ""), "html5lib").prettify()))
 
     context = {
         "site": {
