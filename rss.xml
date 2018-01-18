@@ -130,34 +130,8 @@ Dockerfile中生成静态html网页，然后在构建的过程中将静态网页
 之前我们为了得到静态html文件，可能得选用一个python的基础镜像，然后再apt/apk安装一些必要的编译工具，最终只是为了几百kb的html文件，但是
 构建的镜像已经上百MB了。有了multi stage build之后，这个问题便非常好地被解决了。看了下面的Dockerfile之后，整体思路就非常清晰了。目前我
 在本地写完rst文本，然后git push之后，CircleCI会自动进行Dockerfile的构建，然后将编译生成的静态html推送到gh-pages分支。
-FROM python:3.6.0 as builder
-LABEL maintainer=clarkzjw&lt;hello@jinwei.me&gt;
-RUN pip install virtualenv
-COPY requirements.txt /app/requirements.txt
-COPY bootstrap.py /app/bootstrap.py
-RUN /app/bootstrap.py
-ADD . /app
-WORKDIR /app
-RUN /bin/bash -c &#34;source /app/.venv/bin/activate &amp;&amp; make html &amp;&amp; make rss &amp;&amp; cp rss.xml _build/html&#34;
 
-
-FROM alpine:latest
-RUN sed -i &#39;s/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g&#39; /etc/apk/repositories
-RUN apk add --update git openssh-client &amp;&amp; rm -rf /var/cache/apk/*
-WORKDIR /html
-ENV COMMIT_USER=&#34;clarkzjw&#34;
-ENV COMMIT_EMAIL=&#34;hello@jinwei.me&#34;
-ARG GIT_TOKEN=&#34;&#34;
-RUN git config --global user.email $COMMIT_EMAIL &amp;&amp; git config --global user.name $COMMIT_USER
-RUN git clone https://clarkzjw:$GIT_TOKEN@github.com/clarkzjw/blog.jinwei.me.git /html &amp;&amp; git checkout gh-pages
-COPY --from=builder /app/_build/html /html
-RUN echo &#34;`date`&#34; &gt; /html/.lastmodify &amp;&amp; git add -A &amp;&amp; git commit -m &#34;`date`&#34; &amp;&amp; git push origin gh-pages
-
-
-FROM nginx:alpine
-COPY --from=builder /app/_build/html /usr/share/nginx/html
-
-
+    
 另外一个问题是博客的RSS。由于Sphinx最初的设计是作为一个文档生成工具，目前市面上有的和Sphinx结合的RSS生成工具大致有：
 
 Sphinx-contrib模块中的 feed
