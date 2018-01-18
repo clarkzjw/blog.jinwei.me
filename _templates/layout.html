@@ -2,7 +2,7 @@
 {% extends "!layout.html" %}
 
 {# Include our new CSS file into existing ones. #}
-{% set css_files = css_files + ['_static/flexboxgrid.min.css', '_static/git-pull.css']%}
+{% set css_files = css_files + ['_static/flexboxgrid.min.css', '_static/git-pull.css', '_static/han.min.css']%}
 
 <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
@@ -17,10 +17,15 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
 <link rel="manifest" href="/manifest.json">
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
+
+{%- block doctype -%}
+<!DOCTYPE html>
+{%- endblock %}
 
 {%- block content %}
 {%- if theme_fixed_sidebar|lower == 'true' %}
@@ -31,7 +36,7 @@
         {%- if render_sidebar %}
         <div class="bodywrapper">
             {%- endif %}
-            <div class="body" role="main">
+            <div class="body han-init-context" role="main">
                 {% block body %}
                 {% endblock %}
                 <div class="just-comments"
@@ -41,6 +46,7 @@
                 <script async defer src="https://just-comments.com/w.js"></script>
                 <script async defer src="https://buttons.github.io/buttons.js"></script>
                 <script async defer src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <!--<script type="text/javascript" src="../../../_static/han.min.js"></script>-->
             </div>
             {%- if render_sidebar %}
         </div>
@@ -52,4 +58,8 @@
 {%- else %}
 {{ super() }}
 {%- endif %}
+{%- endblock %}
+
+{%- block footer -%}
+<script async defer type="text/javascript" src="../../../_static/han.min.js"></script>
 {%- endblock %}
