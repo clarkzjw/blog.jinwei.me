@@ -13,41 +13,41 @@ Hello World
 Updates
 -------
 
-- *January 2018*
+- **January 2018**
 
     - :ref:`又一个新的博客 <2018newblog>`
 
-- *December 2017*
+- **December 2017**
 
     - :ref:`2017 观影记录 <2017movie>`
     - `The One Device: Experience of Pixel 2 <https://clarkzjw.blogspot.jp/2017/12/pixel2.html>`__
 
-- *October 2017*
+- **October 2017**
 
     - `注销/删除一个互联网帐号有多难 <https://clarkzjw.blogspot.jp/2017/10/baidu.html>`__
 
-- *July 2017*
+- **July 2017**
 
     - `我的大学 <https://clarkzjw.blogspot.jp/2017/07/ingress-httpsarchive.html>`__
 
-- *March 2017*
+- **March 2017**
 
     - `Macbook Pro Late 2016一周体验 <https://clarkzjw.blogspot.jp/2017/03/mbp.html>`__
 
-- *October 2016*
+- **October 2016**
 
     - `Yubikey 4 入手 <https://clarkzjw.blogspot.jp/2016/10/yubikey4.html>`__
     - `ERROR 451: 本網頁基於國家法律而封鎖 <https://clarkzjw.blogspot.jp/2016/10/451.html>`__
 
-- *September 2016*
+- **September 2016**
 
     - `Moto X 2014 XT1085刷CM指南 <https://clarkzjw.blogspot.jp/2016/09/motox-2014.html>`__
 
-- *August 2016*
+- **August 2016**
 
     - `[这列火车] 从北京到莫斯科 <https://clarkzjw.blogspot.jp/2016/08/k3.html>`__
 
-- *April 2016*
+- **April 2016**
 
     - `安利好用的邮件服务之Fastmail <https://clarkzjw.blogspot.jp/2016/04/fastmail.html>`__
 
