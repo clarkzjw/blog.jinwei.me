@@ -35,7 +35,7 @@ extensions = [
 ]
 
 html_title = 'Hello World'
-
+language='zh-Hans-CN'
 templates_path = ['_templates']
 
 source_suffix = '.rst'

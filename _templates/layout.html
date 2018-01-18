@@ -28,14 +28,14 @@
 
 {%- block content %}
 {%- if theme_fixed_sidebar|lower == 'true' %}
-<div class="document han-init-context">
+<div class="document">
     {{ sidebar() }}
     {%- block document %}
     <div class="documentwrapper">
         {%- if render_sidebar %}
         <div class="bodywrapper">
             {%- endif %}
-            <div class="body" role="main">
+            <div class="body han-init-context" role="main">
                 {% block body %}
                 {% endblock %}
                 <div class="just-comments"
@@ -60,4 +60,5 @@
 
 {%- block footer -%}
 <script async defer type="text/javascript" src="../../../_static/han.min.js"></script>
+<script type="text/javascript">Han.init()</script>
 {%- endblock %}
