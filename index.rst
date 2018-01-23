@@ -55,11 +55,10 @@ About me
 --------
 
 - A developer
-- Familiar with C, Python, MATLAB and Golang
+- Familiar with Python, C, etc
 - A user of Vim, Debian, Docker, Raspberry Pi, etc
 - Computer vision enthusiast
 - Ingress resistance
-
 
 Language Skills
 ---------------
@@ -89,7 +88,6 @@ Coding around the web
 .. _one-two-three...infinity: https://github.com/clarkzjw/one-two-three...infinity
 .. _brainfuck: https://github.com/clarkzjw/brainfuck
 .. _@clarkzjw: https://github.com/clarkzjw
-
 
 Contact
 -------
