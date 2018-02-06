@@ -116,7 +116,7 @@ Other
         :align: left
         :target: https://boincstats.com/en/stats/-1/user/detail/59d322a65a0667a4207b6dc6ed9780ee
         :alt: bonic stats
-        :height: 150
+        :height: 100
 
 
 .. container:: row
