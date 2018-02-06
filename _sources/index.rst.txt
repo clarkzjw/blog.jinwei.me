@@ -100,13 +100,24 @@ Contact
 Other
 -----
 
-- I am a volunteer of BOINC, supporting WorldCommunityGrid
+- I am a volunteer of BOINC, supporting experiment like `World Community Grid`_ and `SETI@home`_
+
+- I think Freedom is my birth right and I shall have it, including free speech and free software
 
 .. raw:: html
 
     <iframe src="https://www.worldcommunitygrid.org/getDynamicImage.do?memberName=clarkzjw&mnOn=true&stat=3&imageNum=1&rankOn=true&projectsOn=true&special=true" frameborder="0" name="di" scrolling="no" width="405px" height="190px"></iframe>
 
-- I think Freedom is my birth right and I shall have it, including free speech and free software
+.. container:: row
+
+   .. container:: project
+
+      .. figure:: https://boincstats.com/signature/-1/user/3483994/sig.png
+        :align: left
+        :target: https://boincstats.com/en/stats/-1/user/detail/59d322a65a0667a4207b6dc6ed9780ee
+        :alt: bonic stats
+        :height: 150
+
 
 .. container:: row
 
@@ -137,3 +148,6 @@ Hire me
 -------
 
 I'm available for hire
+
+.. _World Community Grid: https://www.worldcommunitygrid.org/
+.. _SETI@home: https://setiathome.berkeley.edu/
