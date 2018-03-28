@@ -144,10 +144,6 @@ Credit
 
 - All original contents of this site are licensed under `CC BY-SA 3.0 CN <https://creativecommons.org/licenses/by-sa/3.0/cn/>`_
 
-Hire me
--------
-
-I'm available for hire
 
 .. _World Community Grid: https://www.worldcommunitygrid.org/
 .. _SETI@home: https://setiathome.berkeley.edu/
