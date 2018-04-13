@@ -67,6 +67,11 @@ Language Skills
 - English   - Professional working proficiency
 - Esperanto - Elementary proficiency
 
+Current Research Interest
+-------------------------
+
+- I'am currently working on projects involved with image forensics or image forgery detection.
+
 Publications
 ------------
 
