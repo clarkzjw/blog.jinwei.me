@@ -1,2 +1,0 @@
-.. image:: https://circleci.com/gh/clarkzjw/blog.jinwei.me/tree/master.svg?style=svg&circle-token=5b6ef5c319156412205190dae72c6c9f2366007c
-    :target: https://circleci.com/gh/clarkzjw/blog.jinwei.me/tree/master
