@@ -70,7 +70,7 @@ Language Skills
 Current Research Interest
 -------------------------
 
-- I'am currently working on projects involved with image forensics or image forgery detection.
+- I'm currently working on projects involved with image forensics or image forgery detection.
 
 Publications
 ------------
