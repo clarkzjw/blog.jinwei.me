@@ -20,7 +20,7 @@ Updates
 - **December 2017**
 
     - :ref:`2017 观影记录 <2017movie>`
-    - :ref:`The One Device: Experience of Pixel 2 <2017pixel2>`
+    - `The One Device: Experience of Pixel 2 <https://docs.google.com/document/d/1bsG7Sphn8fgZ7a8c5-5SI03QiLP6lLfwYaXqjNo0Arc/edit?usp=sharing>`__
 
 - **October 2017**
 
