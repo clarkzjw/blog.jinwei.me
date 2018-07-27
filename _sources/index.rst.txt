@@ -20,7 +20,7 @@ Updates
 - **December 2017**
 
     - :ref:`2017 观影记录 <2017movie>`
-    - `The One Device: Experience of Pixel 2 <https://clarkzjw.blogspot.jp/2017/12/pixel2.html>`__
+    - :ref:`The One Device: Experience of Pixel 2 <2017pixel2>`
 
 - **October 2017**
 
