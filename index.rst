@@ -24,32 +24,32 @@ Updates
 
 - **October 2017**
 
-    - `注销/删除一个互联网帐号有多难 <https://clarkzjw.blogspot.jp/2017/10/baidu.html>`__
+    - `注销/删除一个互联网帐号有多难 <https://docs.google.com/document/d/1oUNgNlpQht5HriW9rogddPnfBauSNJaIxvGuclVx_HE/edit?usp=sharing>`__
 
 - **July 2017**
 
-    - `我的大学 <https://clarkzjw.blogspot.jp/2017/07/ingress-httpsarchive.html>`__
+    - `我的大学 <https://docs.google.com/document/d/1CcbIDBELo9iVZ00a30sbDHTb9CcB-haPvzavpO1AMdM/edit?usp=sharing>`__
 
 - **March 2017**
 
-    - `Macbook Pro Late 2016一周体验 <https://clarkzjw.blogspot.jp/2017/03/mbp.html>`__
+    - `Macbook Pro Late 2016一周体验 <https://docs.google.com/document/d/1kdfNBpjFcV8z13_f1qyfEqXA7dVHfPTtBb6JUPCxMF8/edit?usp=sharing>`__
 
 - **October 2016**
 
-    - `Yubikey 4 入手 <https://clarkzjw.blogspot.jp/2016/10/yubikey4.html>`__
-    - `ERROR 451: 本網頁基於國家法律而封鎖 <https://clarkzjw.blogspot.jp/2016/10/451.html>`__
+    - `Yubikey 4 入手 <https://docs.google.com/document/d/18JlI2i8Ke6NkTKjOIJEOHkaFbbSGushKrSVSGH5GEF4/edit?usp=sharing>`__
+    - `ERROR 451: 本網頁基於國家法律而封鎖 <https://docs.google.com/document/d/1XEAU7qfyDKfXUfE76rQSArQDp6jYQBzIvivjY_zHlko/edit?usp=sharing>`__
 
 - **September 2016**
 
-    - `Moto X 2014 XT1085刷CM指南 <https://clarkzjw.blogspot.jp/2016/09/motox-2014.html>`__
+    - `Moto X 2014 XT1085刷CM指南 <https://docs.google.com/document/d/17WCIS61c2K3jvS7v-kaOCJ8VVCZW_BUwDEkY0nStY6Y/edit?usp=sharing>`__
 
 - **August 2016**
 
-    - `[这列火车] 从北京到莫斯科 <https://clarkzjw.blogspot.jp/2016/08/k3.html>`__
+    - `[这列火车] 从北京到莫斯科 <https://docs.google.com/document/d/1927lvGmCxhbWdd-PmxUvWoL-d5_j6zyHgQMMsWFAYYc/edit?usp=sharing>`__
 
 - **April 2016**
 
-    - `安利好用的邮件服务之Fastmail <https://clarkzjw.blogspot.jp/2016/04/fastmail.html>`__
+    - `安利好用的邮件服务之Fastmail <https://docs.google.com/document/d/1cFN9JbRM2hYjv24onlzcAatuDw_Ui7a8ZkRlHXa63AY/edit?usp=sharing>`__
 
 About me
 --------
