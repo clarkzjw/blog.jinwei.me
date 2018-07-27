@@ -20,36 +20,36 @@ Updates
 - **December 2017**
 
     - :ref:`2017 观影记录 <2017movie>`
-    - `The One Device: Experience of Pixel 2 <https://docs.google.com/document/d/1bsG7Sphn8fgZ7a8c5-5SI03QiLP6lLfwYaXqjNo0Arc/edit?usp=sharing>`__
+    - `The One Device: Experience of Pixel 2 <https://docs.google.com/document/d/e/2PACX-1vQAUy-NstCP4KbBvg4in5TzzFTCfzhFhL-Iw2rXe-1NwdsF90m1wvImYdlcc3FQBtxGCoREjKfa8_8f/pub>`__
 
 - **October 2017**
 
-    - `注销/删除一个互联网帐号有多难 <https://docs.google.com/document/d/1oUNgNlpQht5HriW9rogddPnfBauSNJaIxvGuclVx_HE/edit?usp=sharing>`__
+    - `注销/删除一个互联网帐号有多难 <https://docs.google.com/document/d/e/2PACX-1vSYLVy57OFb0lnUn1duuI1pwHpztrMAofFaVpp8luwENRL-MwzDLn3cCmeyJG6ARtoLGUQoA9Cd9H1q/pub>`__
 
 - **July 2017**
 
-    - `我的大学 <https://docs.google.com/document/d/1CcbIDBELo9iVZ00a30sbDHTb9CcB-haPvzavpO1AMdM/edit?usp=sharing>`__
+    - `我的大学 <https://docs.google.com/document/d/e/2PACX-1vStEuivWEfA2kD1xUsnFAcFjbTYDzIQ7BdLhRd5AcLd-6vLQ9DffDoWYDRbtHbQSivIG-M-IVjwsR-M/pub>`__
 
 - **March 2017**
 
-    - `Macbook Pro Late 2016一周体验 <https://docs.google.com/document/d/1kdfNBpjFcV8z13_f1qyfEqXA7dVHfPTtBb6JUPCxMF8/edit?usp=sharing>`__
+    - `Macbook Pro Late 2016一周体验 <https://docs.google.com/document/d/e/2PACX-1vTvCx3ANtWkIdsO10Q_RcL6XKxgYLM7vSMa23s9Nw069zGXktQvsGsWwCUJ5AkLkRljsD7iikgAfENB/pub>`__
 
 - **October 2016**
 
-    - `Yubikey 4 入手 <https://docs.google.com/document/d/18JlI2i8Ke6NkTKjOIJEOHkaFbbSGushKrSVSGH5GEF4/edit?usp=sharing>`__
-    - `ERROR 451: 本網頁基於國家法律而封鎖 <https://docs.google.com/document/d/1XEAU7qfyDKfXUfE76rQSArQDp6jYQBzIvivjY_zHlko/edit?usp=sharing>`__
+    - `Yubikey 4 入手 <https://docs.google.com/document/d/e/2PACX-1vQJpm4TTyUlZ2KEtkv2bSYhckBhgGQgbV3nSFqn5wADBXStave1BtaK8Tyg-jdAcqY6u-6XGtwjtDRj/pub>`__
+    - `ERROR 451: 本網頁基於國家法律而封鎖 <https://docs.google.com/document/d/e/2PACX-1vSzamJa2LreyJ3fomgPa7Nk6aAQHCQPFfUFrhY3pAgcAy6G-H_VDXebql-FQ91E7LFBSZyPgePZ-txa/pub>`__
 
 - **September 2016**
 
-    - `Moto X 2014 XT1085刷CM指南 <https://docs.google.com/document/d/17WCIS61c2K3jvS7v-kaOCJ8VVCZW_BUwDEkY0nStY6Y/edit?usp=sharing>`__
+    - `Moto X 2014 XT1085刷CM指南 <https://docs.google.com/document/d/e/2PACX-1vTBBqz-qXJKshxbeuVG7ixrFou4v9xG3n-lWp5WEHVMzpk4BrN5BlCaB53hN522ZOD0UDugEASp2z44/pub>`__
 
 - **August 2016**
 
-    - `[这列火车] 从北京到莫斯科 <https://docs.google.com/document/d/1927lvGmCxhbWdd-PmxUvWoL-d5_j6zyHgQMMsWFAYYc/edit?usp=sharing>`__
+    - `[这列火车] 从北京到莫斯科 <https://docs.google.com/document/d/e/2PACX-1vTFpdct1R--HB9hk-1f0q5ymXMD797NONbEVWBggZiRbW3-QssUvTdnuFbG_AKlw5Vvot2U1EjX4x9b/pub>`__
 
 - **April 2016**
 
-    - `安利好用的邮件服务之Fastmail <https://docs.google.com/document/d/1cFN9JbRM2hYjv24onlzcAatuDw_Ui7a8ZkRlHXa63AY/edit?usp=sharing>`__
+    - `安利好用的邮件服务之Fastmail <https://docs.google.com/document/d/e/2PACX-1vTo2Ap8MD0_acvoMa6AP__6vEmzOMXxCChUy0Aer1_0qa7fxWKqeV2tXzxbhUDmUORTJpZIR5a2PV9b/pub>`__
 
 About me
 --------
