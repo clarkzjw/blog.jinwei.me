@@ -19,37 +19,37 @@ Updates
 
 - **December 2017**
 
-    - :ref:`2017 观影记录 <2017movie>`
-    - `The One Device: Experience of Pixel 2 <https://docs.google.com/document/d/e/2PACX-1vQAUy-NstCP4KbBvg4in5TzzFTCfzhFhL-Iw2rXe-1NwdsF90m1wvImYdlcc3FQBtxGCoREjKfa8_8f/pub>`__
+    - `2017 观影记录 <https://medium.com/@clarkzjw/2017%E8%A7%82%E5%BD%B1%E8%AE%B0%E5%BD%95-438e53f1aaee>`__
+    - `The One Device: Experience of Pixel 2 <https://medium.com/@clarkzjw/the-one-device-experience-of-pixel-2-72593cb2771b>`__
 
 - **October 2017**
 
-    - `注销/删除一个互联网帐号有多难 <https://docs.google.com/document/d/e/2PACX-1vSYLVy57OFb0lnUn1duuI1pwHpztrMAofFaVpp8luwENRL-MwzDLn3cCmeyJG6ARtoLGUQoA9Cd9H1q/pub>`__
+    - `注销/删除一个互联网帐号有多难 <https://medium.com/@clarkzjw/%E6%B3%A8%E9%94%80-%E5%88%A0%E9%99%A4%E4%B8%80%E4%B8%AA%E4%BA%92%E8%81%94%E7%BD%91%E5%B8%90%E5%8F%B7%E6%9C%89%E5%A4%9A%E9%9A%BE-7c093ea0873e>`__
 
 - **July 2017**
 
-    - `我的大学 <https://docs.google.com/document/d/e/2PACX-1vStEuivWEfA2kD1xUsnFAcFjbTYDzIQ7BdLhRd5AcLd-6vLQ9DffDoWYDRbtHbQSivIG-M-IVjwsR-M/pub>`__
+    - `我的大学 <https://medium.com/@clarkzjw/%E6%88%91%E7%9A%84%E5%A4%A7%E5%AD%A6-d6e4282c886a>`__
 
 - **March 2017**
 
-    - `Macbook Pro Late 2016一周体验 <https://docs.google.com/document/d/e/2PACX-1vTvCx3ANtWkIdsO10Q_RcL6XKxgYLM7vSMa23s9Nw069zGXktQvsGsWwCUJ5AkLkRljsD7iikgAfENB/pub>`__
+    - `Macbook Pro Late 2016一周体验 <https://medium.com/@clarkzjw/macbook-pro-late-2016%E4%B8%80%E5%91%A8%E4%BD%93%E9%AA%8C-667474f7925d>`__
 
 - **October 2016**
 
-    - `Yubikey 4 入手 <https://docs.google.com/document/d/e/2PACX-1vQJpm4TTyUlZ2KEtkv2bSYhckBhgGQgbV3nSFqn5wADBXStave1BtaK8Tyg-jdAcqY6u-6XGtwjtDRj/pub>`__
-    - `ERROR 451: 本網頁基於國家法律而封鎖 <https://docs.google.com/document/d/e/2PACX-1vSzamJa2LreyJ3fomgPa7Nk6aAQHCQPFfUFrhY3pAgcAy6G-H_VDXebql-FQ91E7LFBSZyPgePZ-txa/pub>`__
+    - `Yubikey 4 入手 <https://medium.com/@clarkzjw/yubikey-4%E5%85%A5%E6%89%8B-51ec9f8c92eb>`__
+    - `ERROR 451: 本網頁基於國家法律而封鎖 <https://medium.com/@clarkzjw/error-451-%E6%9C%AC%E7%B6%B2%E9%A0%81%E5%9F%BA%E6%96%BC%E5%9C%8B%E5%AE%B6%E6%B3%95%E5%BE%8B%E8%80%8C%E5%B0%81%E9%8E%96-1ad999b31847>`__
 
 - **September 2016**
 
-    - `Moto X 2014 XT1085刷CM指南 <https://docs.google.com/document/d/e/2PACX-1vTBBqz-qXJKshxbeuVG7ixrFou4v9xG3n-lWp5WEHVMzpk4BrN5BlCaB53hN522ZOD0UDugEASp2z44/pub>`__
+    - `Moto X 2014 XT1085刷CM指南 <https://medium.com/@clarkzjw/moto-x-2014-xt1085%E5%88%B7cm%E6%8C%87%E5%8D%97-db8886256ba7>`__
 
 - **August 2016**
 
-    - `[这列火车] 从北京到莫斯科 <https://docs.google.com/document/d/e/2PACX-1vTFpdct1R--HB9hk-1f0q5ymXMD797NONbEVWBggZiRbW3-QssUvTdnuFbG_AKlw5Vvot2U1EjX4x9b/pub>`__
+    - `[这列火车] 从北京到莫斯科 <https://medium.com/@clarkzjw/%E8%BF%99%E5%88%97%E7%81%AB%E8%BD%A6-%E4%BB%8E%E5%8C%97%E4%BA%AC%E5%88%B0%E8%8E%AB%E6%96%AF%E7%A7%91-cbcc17b66c03>`__
 
 - **April 2016**
 
-    - `安利好用的邮件服务之Fastmail <https://docs.google.com/document/d/e/2PACX-1vTo2Ap8MD0_acvoMa6AP__6vEmzOMXxCChUy0Aer1_0qa7fxWKqeV2tXzxbhUDmUORTJpZIR5a2PV9b/pub>`__
+    - `安利好用的邮件服务之Fastmail <https://medium.com/@clarkzjw/%E5%AE%89%E5%88%A9%E5%A5%BD%E7%94%A8%E7%9A%84%E9%82%AE%E4%BB%B6%E6%9C%8D%E5%8A%A1%E4%B9%8Bfastmail-3f335bebdaaf>`__
 
 About me
 --------
