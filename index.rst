@@ -99,7 +99,7 @@ Contact
 
 - Feel free to contact me!
 - PGP: `0x1D017D3D <https://pgp.mit.edu/pks/lookup?op=get&amp;search=0x7E1EB1851D017D3D>`_ | `keybase.io <https://keybase.io/clarkzjw>`_
-- Telegram: @clarkzjw
+- Telegram: `@clarkzjw <https://t.me/clarkzjw>`_ | Channel: `一个理想主义者的自白 <https://t.me/idealist2018>`_
 - Mail to: `hello@jinwei.me <mailto:hello@jinwei.me>`_
 
 Other
