@@ -13,6 +13,10 @@ Hello World
 Updates
 -------
 
+- **August 2018**
+
+    - `爱沙尼亚电子公民不完全指南 <https://medium.com/%E7%88%B1%E6%B2%99%E5%B0%BC%E4%BA%9A%E7%94%B5%E5%AD%90%E5%85%AC%E6%B0%91%E4%B8%8D%E5%AE%8C%E5%85%A8%E6%8C%87%E5%8D%97>`__
+
 - **January 2018**
 
     - :ref:`又一个新的博客 <2018newblog>`
@@ -55,6 +59,7 @@ About me
 --------
 
 - A developer
+- Estonian e-Resident
 - Familiar with Python, C, etc
 - A user of Vim, Debian, Docker, Raspberry Pi, etc
 - Computer vision enthusiast
@@ -66,6 +71,7 @@ Language Skills
 - Mandarin  - Native or Bilingual proficiency
 - English   - Professional working proficiency
 - Esperanto - Elementary proficiency
+- Estonian  - Elementary proficiency
 
 Current Research Interest
 -------------------------
