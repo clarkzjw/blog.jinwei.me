@@ -13,6 +13,11 @@ Hello World
 Updates
 -------
 
+- **October 2018**
+
+    - `不再尴尬的ChromeOS <https://medium.com/@clarkzjw/%E4%B8%8D%E5%86%8D%E5%B0%B4%E5%B0%AC%E7%9A%84chromeos-e81f4c6c42a1>`__
+    - `我与Ingress的1545天 <https://medium.com/@clarkzjw/%E6%88%91%E4%B8%8Eingress%E7%9A%841545%E5%A4%A9-a13a7883f7c2>`__
+    
 - **August 2018**
 
     - `爱沙尼亚电子公民不完全指南 <https://medium.com/%E7%88%B1%E6%B2%99%E5%B0%BC%E4%BA%9A%E7%94%B5%E5%AD%90%E5%85%AC%E6%B0%91%E4%B8%8D%E5%AE%8C%E5%85%A8%E6%8C%87%E5%8D%97>`__
