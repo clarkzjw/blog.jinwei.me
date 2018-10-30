@@ -76,12 +76,6 @@ Language Skills
 - Mandarin  - Native or Bilingual proficiency
 - English   - Professional working proficiency
 - Esperanto - Elementary proficiency
-- Estonian  - Elementary proficiency
-
-Current Research Interest
--------------------------
-
-- I'm currently working on projects involved with image forensics or image forgery detection.
 
 Publications
 ------------
@@ -98,12 +92,11 @@ Coding around the web
 - `Dehaze`_, implementation of dark channel prior based image dehazing algorithms
 - `one-two-three...infinity`_, 📏 Calculating the sum from one to a billion in different programming languages, inspired by https://github.com/leachim6/hello-world
 - `brainfuck`_, 🙇 Simple Brainfuck interpreter implemented in C
-- GitHub `@clarkzjw`_ for recent / current coding
+- GitHub `@clarkzjw <https://github.com/clarkzjw>`__ for recent / current coding
 
 .. _Dehaze: https://github.com/clarkzjw/Dehaze
 .. _one-two-three...infinity: https://github.com/clarkzjw/one-two-three...infinity
 .. _brainfuck: https://github.com/clarkzjw/brainfuck
-.. _@clarkzjw: https://github.com/clarkzjw
 
 Contact
 -------
