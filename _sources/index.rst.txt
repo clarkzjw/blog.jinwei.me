@@ -80,11 +80,8 @@ Language Skills
 Publications
 ------------
 
-- `基于主色检测与灰度传播的彩色图像灰度化方法 <http://d.wanfangdata.com.cn/Periodical/jsjfzsjytxxxb201603008>`__
 - `Texture filtering based physically plausible image dehazing <https://link.springer.com/article/10.1007%2Fs00371-016-1259-3>`__
 - `暗通道先验图像去雾的大气光校验和光晕消除 <http://www.cjig.cn/jig/ch/reader/view_abstract.aspx?file_no=20160911&flag=1>`__
-- `Sky detection and texture smoothing-based high-visibility haze removal from images and videos <http://onlinelibrary.wiley.com/doi/10.1002/cav.1776/abstract>`__
-- `鲁棒图像去雾的大气光校正与透射率优化算法 <http://www.jcad.cn/jcadcms/show.action?code=publish_402880124b362464014b3c4d819803a1&newsid=0035d0b18a6b4ae1905c6f05d86303eb>`__
 
 Coding around the web
 ---------------------
