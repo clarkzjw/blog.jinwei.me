@@ -13,6 +13,10 @@ Hello World
 Updates
 -------
 
+- **June 2019**
+
+    - `在2019年安装Docker是怎样一种体验 <https://medium.com/@clarkzjw/%E5%9C%A82019%E5%B9%B4%E5%AE%89%E8%A3%85docker%E6%98%AF%E6%80%8E%E6%A0%B7%E4%B8%80%E7%A7%8D%E4%BD%93%E9%AA%8C-4068e6210365>`__
+
 - **October 2018**
 
     - `不再尴尬的ChromeOS <https://medium.com/@clarkzjw/%E4%B8%8D%E5%86%8D%E5%B0%B4%E5%B0%AC%E7%9A%84chromeos-e81f4c6c42a1>`__
