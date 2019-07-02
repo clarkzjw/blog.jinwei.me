@@ -15,6 +15,8 @@ Updates
 
 - **June 2019**
 
+    - `2019半年度总结 <https://medium.com/@clarkzjw/2019%E5%8D%8A%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93-ac59b681224>`__
+    
     - `在2019年安装Docker是怎样一种体验 <https://medium.com/@clarkzjw/%E5%9C%A82019%E5%B9%B4%E5%AE%89%E8%A3%85docker%E6%98%AF%E6%80%8E%E6%A0%B7%E4%B8%80%E7%A7%8D%E4%BD%93%E9%AA%8C-4068e6210365>`__
 
 - **October 2018**
