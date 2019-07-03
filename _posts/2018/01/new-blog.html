@@ -28,233 +28,231 @@
  <body>
   <div class="document">
    <div class="documentwrapper">
-    <div class="bodywrapper">
-     <div class="body han-init-context" role="main">
-      <div class="section" id="newblog">
-       <span id="id1">
-       </span>
-       <h1>
-        又一个新的博客
-        <a class="headerlink" href="#newblog" title="Permalink to this headline">
-         ¶
+    <div class="body" role="main">
+     <div class="section" id="newblog">
+      <span id="id1">
+      </span>
+      <h1>
+       又一个新的博客
+       <a class="headerlink" href="#newblog" title="Permalink to this headline">
+        ¶
+       </a>
+      </h1>
+      <table class="docutils field-list" frame="void" rules="none">
+       <colgroup>
+        <col class="field-name"/>
+        <col class="field-body"/>
+       </colgroup>
+       <tbody valign="top">
+        <tr class="field-odd field">
+         <th class="field-name">
+          Publish Date:
+         </th>
+         <td class="field-body">
+          2018-01-15
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <p>
+       前段时间有朋友和我抱怨博客加载速度太慢了（。之前的博客架在Blogger上，为了让排版稍微美观一些，找了一个第三方的主题，加载了许多外部的资源，导致网页载入速度非常慢。虽然我自己对于网站在国内的加载速度毫不在意，但是既然还有读者（少的可怜）在看，以及在这极少的读者中有用户提出了这个问题，那就得解决。前段时间无意中看到一个博客（
+       <a class="reference external" href="https://www.git-pull.com/index.html">
+        git-pull
+       </a>
+       ），觉得主题简洁而又美观，于是开始着手改造自己的博客。
+      </p>
+      <p>
+       这次用了「大名鼎鼎」的
+       <a class="reference external" href="http://www.sphinx-doc.org/en/stable/">
+        Sphinx
+       </a>
+       ，一个软件开发过程中的文档生成工具来作为博客的静态网页生成引擎。上手Sphinx非常简单，sphinx-quickstart这个工具和一般的博客生成器一样，集成了很多功能，把Makefile都写好了，可以说是完全开箱即用了。Sphinx的默认主题是
+       <a class="reference external" href="https://alabaster.readthedocs.io/en/latest/">
+        Alabaster
+       </a>
+       ，现在你看到的这个主题就是在Alabaster上修改而来的。
+      </p>
+      <p>
+       Sphinx的文档书写采用的是*.rst格式的文本，即
+       <a class="reference external" href="http://docutils.sourceforge.net/rst.html">
+        reStructuredText
+       </a>
+       ，而不是Markdown。相比之前，rst比Markdown的语法更加丰富/复杂，同时也提供了更加丰富的功能和可扩展性（虽然我估计我只能用到其中的20%甚至更少啦）。不清楚rst和Emacs社区的
+       <a class="reference external" href="https://orgmode.org/">
+        Org Mode
+       </a>
+       相比哪一个的语法更加复杂呢。（
+      </p>
+      <p>
+       建设博客离不开几件事情。首先当然就是部署运维啦。Sphinx通过Makefile可以生成静态html网页，托管静态html最方便的地方当然是GitHub Pages啦。最简单粗暴的方法是在本地的环境中写完rst文本，然后本地 make html 通过之后，将html推送到GitHub Pages中。但是这种方式的移植性不高，想写博客的话必须坐在自己的电脑前，同时依然存在一些手动的工作。所以当然选择Docker啦。但是这次用Docker的姿势和以往不同。平时我们用Docker的时候最终都是想要得到docker build的产物docker image，然后由image来进行部署。但是我们这次的目标是GitHub Pages，没法部署容器。所以我在Dockerfile中生成静态html网页，然后在构建的过程中将静态网页push到repo的gh-pages分支中。当然其实不用Docker也能做到这一点。写一个脚本，然后在CI平台上执行脚本也行，就不做优劣对比了。
+      </p>
+      <p>
+       值得一提的是，Docker在17.05-ce版本之后引入了multi stage build的功能，可以在Dockerfile中FROM多个基础镜像，在下一个stage可以直接使用之前stage构建出的产物。以我的博客这个项目为例。假如我是想通过image来部署，那么我最终的产物是静态html文件，那么我可能需要一个nginx的基础镜像。nginx:alpine 这个基础镜像很小，不到10MB，在Dockerfile里面将html文件COPY进去之后，最终得到的image也只有10MB左右的大小。但是之前我们为了得到静态html文件，可能得选用一个python的基础镜像，然后再apt/apk安装一些必要的编译工具，最终只是为了几百kb的html文件，但是构建的镜像已经上百MB了。有了multi stage build之后，这个问题便非常好地被解决了。看了下面的Dockerfile之后，整体思路就非常清晰了。目前我在本地写完rst文本，然后git push之后，CircleCI会自动进行Dockerfile的构建，然后将编译生成的静态html推送到gh-pages分支。
+      </p>
+      <embed/>
+      <script src="https://gist.github.com/clarkzjw/0cb4e15794a5a132b12df9741e0cc1e0.js">
+      </script>
+      <p>
+       另外一个问题是博客的RSS。由于Sphinx最初的设计是作为一个文档生成工具，目前市面上有的和Sphinx结合的RSS生成工具大致有：
+      </p>
+      <ul class="simple">
+       <li>
+        Sphinx-contrib模块中的
+        <a class="reference external" href="https://bitbucket.org/birkenfeld/sphinx-contrib/src/tip/feed/">
+         feed
         </a>
-       </h1>
-       <table class="docutils field-list" frame="void" rules="none">
-        <colgroup>
-         <col class="field-name"/>
-         <col class="field-body"/>
-        </colgroup>
-        <tbody valign="top">
-         <tr class="field-odd field">
-          <th class="field-name">
-           Publish Date:
-          </th>
-          <td class="field-body">
-           2018-01-15
-          </td>
-         </tr>
-        </tbody>
-       </table>
-       <p>
-        前段时间有朋友和我抱怨博客加载速度太慢了（。之前的博客架在Blogger上，为了让排版稍微美观一些，找了一个第三方的主题，加载了许多外部的资源，导致网页载入速度非常慢。虽然我自己对于网站在国内的加载速度毫不在意，但是既然还有读者（少的可怜）在看，以及在这极少的读者中有用户提出了这个问题，那就得解决。前段时间无意中看到一个博客（
-        <a class="reference external" href="https://www.git-pull.com/index.html">
-         git-pull
+       </li>
+       <li>
+        在sphinxcontrib.feed基础上开发的
+        <a class="reference external" href="https://github.com/junkafarian/sphinxfeed">
+         sphinxfeed
         </a>
-        ），觉得主题简洁而又美观，于是开始着手改造自己的博客。
-       </p>
-       <p>
-        这次用了「大名鼎鼎」的
-        <a class="reference external" href="http://www.sphinx-doc.org/en/stable/">
-         Sphinx
+       </li>
+       <li>
+        以及更新一点的
+        <a class="reference external" href="https://pypi.python.org/pypi/sphinxcontrib-newsfeed">
+         sphinxcontrib-newsfeed
         </a>
-        ，一个软件开发过程中的文档生成工具来作为博客的静态网页生成引擎。上手Sphinx非常简单，sphinx-quickstart这个工具和一般的博客生成器一样，集成了很多功能，把Makefile都写好了，可以说是完全开箱即用了。Sphinx的默认主题是
-        <a class="reference external" href="https://alabaster.readthedocs.io/en/latest/">
-         Alabaster
-        </a>
-        ，现在你看到的这个主题就是在Alabaster上修改而来的。
-       </p>
-       <p>
-        Sphinx的文档书写采用的是*.rst格式的文本，即
-        <a class="reference external" href="http://docutils.sourceforge.net/rst.html">
-         reStructuredText
-        </a>
-        ，而不是Markdown。相比之前，rst比Markdown的语法更加丰富/复杂，同时也提供了更加丰富的功能和可扩展性（虽然我估计我只能用到其中的20%甚至更少啦）。不清楚rst和Emacs社区的
-        <a class="reference external" href="https://orgmode.org/">
-         Org Mode
-        </a>
-        相比哪一个的语法更加复杂呢。（
-       </p>
-       <p>
-        建设博客离不开几件事情。首先当然就是部署运维啦。Sphinx通过Makefile可以生成静态html网页，托管静态html最方便的地方当然是GitHub Pages啦。最简单粗暴的方法是在本地的环境中写完rst文本，然后本地 make html 通过之后，将html推送到GitHub Pages中。但是这种方式的移植性不高，想写博客的话必须坐在自己的电脑前，同时依然存在一些手动的工作。所以当然选择Docker啦。但是这次用Docker的姿势和以往不同。平时我们用Docker的时候最终都是想要得到docker build的产物docker image，然后由image来进行部署。但是我们这次的目标是GitHub Pages，没法部署容器。所以我在Dockerfile中生成静态html网页，然后在构建的过程中将静态网页push到repo的gh-pages分支中。当然其实不用Docker也能做到这一点。写一个脚本，然后在CI平台上执行脚本也行，就不做优劣对比了。
-       </p>
-       <p>
-        值得一提的是，Docker在17.05-ce版本之后引入了multi stage build的功能，可以在Dockerfile中FROM多个基础镜像，在下一个stage可以直接使用之前stage构建出的产物。以我的博客这个项目为例。假如我是想通过image来部署，那么我最终的产物是静态html文件，那么我可能需要一个nginx的基础镜像。nginx:alpine 这个基础镜像很小，不到10MB，在Dockerfile里面将html文件COPY进去之后，最终得到的image也只有10MB左右的大小。但是之前我们为了得到静态html文件，可能得选用一个python的基础镜像，然后再apt/apk安装一些必要的编译工具，最终只是为了几百kb的html文件，但是构建的镜像已经上百MB了。有了multi stage build之后，这个问题便非常好地被解决了。看了下面的Dockerfile之后，整体思路就非常清晰了。目前我在本地写完rst文本，然后git push之后，CircleCI会自动进行Dockerfile的构建，然后将编译生成的静态html推送到gh-pages分支。
-       </p>
-       <embed/>
-       <script src="https://gist.github.com/clarkzjw/0cb4e15794a5a132b12df9741e0cc1e0.js">
-       </script>
-       <p>
-        另外一个问题是博客的RSS。由于Sphinx最初的设计是作为一个文档生成工具，目前市面上有的和Sphinx结合的RSS生成工具大致有：
-       </p>
-       <ul class="simple">
-        <li>
-         Sphinx-contrib模块中的
-         <a class="reference external" href="https://bitbucket.org/birkenfeld/sphinx-contrib/src/tip/feed/">
-          feed
-         </a>
-        </li>
-        <li>
-         在sphinxcontrib.feed基础上开发的
-         <a class="reference external" href="https://github.com/junkafarian/sphinxfeed">
-          sphinxfeed
-         </a>
-        </li>
-        <li>
-         以及更新一点的
-         <a class="reference external" href="https://pypi.python.org/pypi/sphinxcontrib-newsfeed">
-          sphinxcontrib-newsfeed
-         </a>
-        </li>
-       </ul>
-       <p>
-        其中sphinxcontrib.feed和sphinxfeed的功能性更新都停止在2011年，不兼容Python 3，GitHub上有几个fork，但是也基本没有太多的改进。至于sphinxcontrib-newsfeed，并不能生成符合RSS规范的输出。。。所以只好自己简单粗暴造一个轮子了！（至少生成的xml能被RSS阅读器认识。。。
-       </p>
-       <p>
-        RSS 订阅地址是
-        <a class="reference external" href="https://blog.jinwei.me/rss">
-         https://blog.jinwei.me/rss
-        </a>
-       </p>
-       <p>
-        至于评论嘛。虽然博客流量小，2017年下来一年也没有10条评论，但是作为一个博客，这个功能还是必须得有！考察了目前市面上的评论方案，Disqus现在差不多可以算是一家独大了。但是十分不喜欢Disqus。一个页面要加载的无关的数据太多了。然后看到了
-        <a class="reference external" href="https://github.com/posativ/isso">
-         Isso
-        </a>
-        , 第一印象还不错，但是需要自己单独部署。为了一年10条评论不到的数量级单独部署似乎成本略高。之前还见到了
-        <a class="reference external" href="https://staticman.net">
-         Staticman
-        </a>
-        , 但是这个方案和GitHub的issue绑定，一个博客实例对应GitHub的一个repo，然后每篇文章的评论对应这个repo中的issue。但是我不太能接受，毕竟不能强制每个评论的用户都有GitHub帐号。今天无意中看到了
-        <a class="reference external" href="https://just-comments.com/">
-         just-comments
-        </a>
-        , 也是一个SaaS解决方案，但是非常地极简，决定先用着试试效果。（
-       </p>
-       <p>
-        下一步，打算在博客中加入
-        <a class="reference external" href="https://css.hanzi.co/">
-         漢字標準格式
-        </a>
-        这套排版框架。毕竟现在的页面排版看起来怪怪的，以及并不美观。（
-       </p>
-      </div>
-      <div>
+       </li>
+      </ul>
+      <p>
+       其中sphinxcontrib.feed和sphinxfeed的功能性更新都停止在2011年，不兼容Python 3，GitHub上有几个fork，但是也基本没有太多的改进。至于sphinxcontrib-newsfeed，并不能生成符合RSS规范的输出。。。所以只好自己简单粗暴造一个轮子了！（至少生成的xml能被RSS阅读器认识。。。
+      </p>
+      <p>
+       RSS 订阅地址是
+       <a class="reference external" href="https://blog.jinwei.me/rss">
+        https://blog.jinwei.me/rss
+       </a>
+      </p>
+      <p>
+       至于评论嘛。虽然博客流量小，2017年下来一年也没有10条评论，但是作为一个博客，这个功能还是必须得有！考察了目前市面上的评论方案，Disqus现在差不多可以算是一家独大了。但是十分不喜欢Disqus。一个页面要加载的无关的数据太多了。然后看到了
+       <a class="reference external" href="https://github.com/posativ/isso">
+        Isso
+       </a>
+       , 第一印象还不错，但是需要自己单独部署。为了一年10条评论不到的数量级单独部署似乎成本略高。之前还见到了
+       <a class="reference external" href="https://staticman.net">
+        Staticman
+       </a>
+       , 但是这个方案和GitHub的issue绑定，一个博客实例对应GitHub的一个repo，然后每篇文章的评论对应这个repo中的issue。但是我不太能接受，毕竟不能强制每个评论的用户都有GitHub帐号。今天无意中看到了
+       <a class="reference external" href="https://just-comments.com/">
+        just-comments
+       </a>
+       , 也是一个SaaS解决方案，但是非常地极简，决定先用着试试效果。（
+      </p>
+      <p>
+       下一步，打算在博客中加入
+       <a class="reference external" href="https://css.hanzi.co/">
+        漢字標準格式
+       </a>
+       这套排版框架。毕竟现在的页面排版看起来怪怪的，以及并不美观。（
+      </p>
+     </div>
+     <div>
+      <br/>
+      <div style="text-align: center; margin: 25px auto 15px;">
+       <svg height="20" width="138" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <linearGradient id="b" x2="0" y2="100%">
+         <stop offset="0" stop-color="#bbb" stop-opacity=".1">
+         </stop>
+         <stop offset="1" stop-opacity=".1">
+         </stop>
+        </linearGradient>
+        <clipPath id="a">
+         <rect fill="#fff" height="20" rx="3" width="138">
+         </rect>
+        </clipPath>
+        <g clip-path="url(#a)">
+         <path d="M0 0h73v20H0z" fill="#555">
+         </path>
+         <path d="M73 0h65v20H73z" fill="#e05d44">
+         </path>
+         <path d="M0 0h138v20H0z" fill="url(#b)">
+         </path>
+        </g>
+        <g fill="#fff" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="110" text-anchor="middle">
+         <text fill="#010101" fill-opacity=".3" textLength="630" transform="scale(.1)" x="375" y="150">
+          Powered by
+         </text>
+         <text textLength="630" transform="scale(.1)" x="375" y="140">
+          Powered by
+         </text>
+         <text fill="#010101" fill-opacity=".3" textLength="550" transform="scale(.1)" x="1045" y="150">
+          Cloudflare
+         </text>
+         <text textLength="550" transform="scale(.1)" x="1045" y="140">
+          Cloudflare
+         </text>
+        </g>
+       </svg>
+       <svg height="20" width="116" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <linearGradient id="b" x2="0" y2="100%">
+         <stop offset="0" stop-color="#bbb" stop-opacity=".1">
+         </stop>
+         <stop offset="1" stop-opacity=".1">
+         </stop>
+        </linearGradient>
+        <clipPath id="a">
+         <rect fill="#fff" height="20" rx="3" width="116">
+         </rect>
+        </clipPath>
+        <g clip-path="url(#a)">
+         <path d="M0 0h69v20H0z" fill="#555">
+         </path>
+         <path d="M69 0h47v20H69z" fill="#97CA00">
+         </path>
+         <path d="M0 0h116v20H0z" fill="url(#b)">
+         </path>
+        </g>
+        <g fill="#fff" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="110" text-anchor="middle">
+         <text fill="#010101" fill-opacity=".3" textLength="590" transform="scale(.1)" x="355" y="150">
+          Hosted on
+         </text>
+         <text textLength="590" transform="scale(.1)" x="355" y="140">
+          Hosted on
+         </text>
+         <text fill="#010101" fill-opacity=".3" textLength="370" transform="scale(.1)" x="915" y="150">
+          GitHub
+         </text>
+         <text textLength="370" transform="scale(.1)" x="915" y="140">
+          GitHub
+         </text>
+        </g>
+       </svg>
        <br/>
-       <div style="text-align: center; margin: 25px auto 15px;">
-        <svg height="20" width="138" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-         <linearGradient id="b" x2="0" y2="100%">
-          <stop offset="0" stop-color="#bbb" stop-opacity=".1">
-          </stop>
-          <stop offset="1" stop-opacity=".1">
-          </stop>
-         </linearGradient>
-         <clipPath id="a">
-          <rect fill="#fff" height="20" rx="3" width="138">
-          </rect>
-         </clipPath>
-         <g clip-path="url(#a)">
-          <path d="M0 0h73v20H0z" fill="#555">
-          </path>
-          <path d="M73 0h65v20H73z" fill="#e05d44">
-          </path>
-          <path d="M0 0h138v20H0z" fill="url(#b)">
-          </path>
-         </g>
-         <g fill="#fff" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="110" text-anchor="middle">
-          <text fill="#010101" fill-opacity=".3" textLength="630" transform="scale(.1)" x="375" y="150">
-           Powered by
-          </text>
-          <text textLength="630" transform="scale(.1)" x="375" y="140">
-           Powered by
-          </text>
-          <text fill="#010101" fill-opacity=".3" textLength="550" transform="scale(.1)" x="1045" y="150">
-           Cloudflare
-          </text>
-          <text textLength="550" transform="scale(.1)" x="1045" y="140">
-           Cloudflare
-          </text>
-         </g>
-        </svg>
-        <svg height="20" width="116" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-         <linearGradient id="b" x2="0" y2="100%">
-          <stop offset="0" stop-color="#bbb" stop-opacity=".1">
-          </stop>
-          <stop offset="1" stop-opacity=".1">
-          </stop>
-         </linearGradient>
-         <clipPath id="a">
-          <rect fill="#fff" height="20" rx="3" width="116">
-          </rect>
-         </clipPath>
-         <g clip-path="url(#a)">
-          <path d="M0 0h69v20H0z" fill="#555">
-          </path>
-          <path d="M69 0h47v20H69z" fill="#97CA00">
-          </path>
-          <path d="M0 0h116v20H0z" fill="url(#b)">
-          </path>
-         </g>
-         <g fill="#fff" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="110" text-anchor="middle">
-          <text fill="#010101" fill-opacity=".3" textLength="590" transform="scale(.1)" x="355" y="150">
-           Hosted on
-          </text>
-          <text textLength="590" transform="scale(.1)" x="355" y="140">
-           Hosted on
-          </text>
-          <text fill="#010101" fill-opacity=".3" textLength="370" transform="scale(.1)" x="915" y="150">
-           GitHub
-          </text>
-          <text textLength="370" transform="scale(.1)" x="915" y="140">
-           GitHub
-          </text>
-         </g>
-        </svg>
-        <br/>
-        <svg height="20" width="78" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-         <linearGradient id="b" x2="0" y2="100%">
-          <stop offset="0" stop-color="#bbb" stop-opacity=".1">
-          </stop>
-          <stop offset="1" stop-opacity=".1">
-          </stop>
-         </linearGradient>
-         <clipPath id="a">
-          <rect fill="#fff" height="20" rx="3" width="78">
-          </rect>
-         </clipPath>
-         <g clip-path="url(#a)">
-          <path d="M0 0h57v20H0z" fill="#555">
-          </path>
-          <path d="M57 0h21v20H57z" fill="#e05d44">
-          </path>
-          <path d="M0 0h78v20H0z" fill="url(#b)">
-          </path>
-         </g>
-         <g fill="#fff" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="110" text-anchor="middle">
-          <text fill="#010101" fill-opacity=".3" textLength="470" transform="scale(.1)" x="295" y="150">
-           Made w/
-          </text>
-          <text textLength="470" transform="scale(.1)" x="295" y="140">
-           Made w/
-          </text>
-          <text fill="#010101" fill-opacity=".3" textLength="110" transform="scale(.1)" x="665" y="150">
-           ❤
-          </text>
-          <text textLength="110" transform="scale(.1)" x="665" y="140">
-           ❤
-          </text>
-         </g>
-        </svg>
-       </div>
+       <svg height="20" width="78" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <linearGradient id="b" x2="0" y2="100%">
+         <stop offset="0" stop-color="#bbb" stop-opacity=".1">
+         </stop>
+         <stop offset="1" stop-opacity=".1">
+         </stop>
+        </linearGradient>
+        <clipPath id="a">
+         <rect fill="#fff" height="20" rx="3" width="78">
+         </rect>
+        </clipPath>
+        <g clip-path="url(#a)">
+         <path d="M0 0h57v20H0z" fill="#555">
+         </path>
+         <path d="M57 0h21v20H57z" fill="#e05d44">
+         </path>
+         <path d="M0 0h78v20H0z" fill="url(#b)">
+         </path>
+        </g>
+        <g fill="#fff" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="110" text-anchor="middle">
+         <text fill="#010101" fill-opacity=".3" textLength="470" transform="scale(.1)" x="295" y="150">
+          Made w/
+         </text>
+         <text textLength="470" transform="scale(.1)" x="295" y="140">
+          Made w/
+         </text>
+         <text fill="#010101" fill-opacity=".3" textLength="110" transform="scale(.1)" x="665" y="150">
+          ❤
+         </text>
+         <text textLength="110" transform="scale(.1)" x="665" y="140">
+          ❤
+         </text>
+        </g>
+       </svg>
       </div>
      </div>
     </div>
@@ -280,50 +278,10 @@
        </li>
       </ul>
      </div>
-     <h3>
-      Other Projects
-     </h3>
-     <ul>
-      <li>
-       <a href="https://github.com/clarkzjw/Dehaze">
-        Dehaze
-       </a>
-      </li>
-      <li>
-       <a href="https://github.com/clarkzjw/GuidedFilter">
-        GuidedFilter
-       </a>
-      </li>
-      <li>
-       <a href="https://github.com/clarkzjw/LumberJack">
-        LumberJack
-       </a>
-      </li>
-      <li>
-       <a href="https://github.com/clarkzjw/one-two-three...infinity">
-        one-two-three...infinity
-       </a>
-      </li>
-      <li>
-       <a href="https://github.com/clarkzjw/nginx-proxy-google">
-        nginx-proxy-google
-       </a>
-      </li>
-      <li>
-       <a href="https://github.com/clarkzjw/brainfuck">
-        brainfuck
-       </a>
-      </li>
-     </ul>
     </div>
    </div>
    <div class="clearer">
    </div>
   </div>
-  <script async="" defer="" src="../../../_static/han.min.js" type="text/javascript">
-  </script>
-  <script type="text/javascript">
-   Han.init()
-  </script>
  </body>
 </html>
