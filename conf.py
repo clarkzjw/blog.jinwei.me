@@ -19,8 +19,8 @@ source_suffix = '.rst'
 
 master_doc = 'index'
 
-project = u'ring0.xyz'
-copyright = u'2013 - 2018, clarkzjw'  # NOQA
+project = u'blog.jinwei.me'
+copyright = u'2013 - 2019, clarkzjw'  # NOQA
 
 version = '0.0'
 release = '0.0'
