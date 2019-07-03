@@ -35,10 +35,6 @@ html_favicon = '_static/favicon.ico'
 html_theme_options = {
 }
 html_sidebars = {
-    '**': [
-        'about.html',
-        'relations.html',
-    ]
 }
 
 html_static_path = ['_static']
