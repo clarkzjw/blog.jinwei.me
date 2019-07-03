@@ -3,30 +3,7 @@
 import alagitpull
 
 alagitpull.projects = [
-    {
-        'name': 'Dehaze',
-        'url': 'https://github.com/clarkzjw/Dehaze'
-    },
-    {
-        'name': 'GuidedFilter',
-        'url': 'https://github.com/clarkzjw/GuidedFilter',
-    },
-    {
-        'name': 'LumberJack',
-        'url': 'https://github.com/clarkzjw/LumberJack',
-    },
-    {
-        'name': 'one-two-three...infinity',
-        'url': 'https://github.com/clarkzjw/one-two-three...infinity'
-    },
-    {
-        'name': 'nginx-proxy-google',
-        'url': 'https://github.com/clarkzjw/nginx-proxy-google',
-    },
-    {
-        'name': 'brainfuck',
-        'url': 'https://github.com/clarkzjw/brainfuck'
-    }
+
 ]
 
 extensions = [
@@ -57,13 +34,11 @@ html_theme = 'alagitpull'
 html_favicon = '_static/favicon.ico'
 html_theme_options = {
     'logo': 'img/terminal-icon.png',
-    'projects': alagitpull.projects,
 }
 html_sidebars = {
     '**': [
         'about.html',
         'relations.html',
-        'more.html',
     ]
 }
 

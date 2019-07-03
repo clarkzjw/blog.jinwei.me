@@ -33,11 +33,7 @@
     {{ sidebar() }}
     {%- block document %}
     <div class="documentwrapper">
-        {%- if render_sidebar %}
-        <div class="bodywrapper">
-            {%- endif %}
-
-            <div class="body han-init-context" role="main">
+        <div class="body" role="main">
                 {% block body %}
                 {% endblock %}
                 <div>
@@ -49,10 +45,7 @@
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="78" height="20"><linearGradient id="b" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="a"><rect width="78" height="20" rx="3" fill="#fff"/></clipPath><g clip-path="url(#a)"><path fill="#555" d="M0 0h57v20H0z"/><path fill="#e05d44" d="M57 0h21v20H57z"/><path fill="url(#b)" d="M0 0h78v20H0z"/></g><g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="110"><text x="295" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="470">Made w/</text><text x="295" y="140" transform="scale(.1)" textLength="470">Made w/</text><text x="665" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="110">❤</text><text x="665" y="140" transform="scale(.1)" textLength="110">❤</text></g> </svg>
                     </div>
                 </div>
-            </div>
-            {%- if render_sidebar %}
         </div>
-        {%- endif %}
     </div>
     {%- endblock %}
     <div class="clearer"></div>
@@ -63,6 +56,4 @@
 {%- endblock %}
 
 {%- block footer %}
-<script async defer type="text/javascript" src="../../../_static/han.min.js"></script>
-<script type="text/javascript">Han.init()</script>
 {%- endblock %}
