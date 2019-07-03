@@ -33,7 +33,6 @@ html_theme_path = [alagitpull.get_path()]
 html_theme = 'alagitpull'
 html_favicon = '_static/favicon.ico'
 html_theme_options = {
-    'logo': 'img/terminal-icon.png',
 }
 html_sidebars = {
     '**': [
