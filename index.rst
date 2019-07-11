@@ -140,6 +140,11 @@ Other
         :target: https://en.wikipedia.org/wiki/Free_Speech_Flag
         :alt: en.wikipedia.org
         :height: 150
+        
+- Dream travel:
+
+  - `Beijing – Moscow Train K3 <https://zh.wikipedia.org/wiki/K3/4%E6%AC%A1%E5%88%97%E8%BD%A6>`_
+  - `Korean Demilitarized Zone <https://en.wikipedia.org/wiki/Korean_Demilitarized_Zone>`_
 
 Credit
 ------
