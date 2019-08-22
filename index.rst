@@ -99,6 +99,16 @@ Contact
 - Telegram: `@clarkzjw <https://t.me/clarkzjw>`_ | Twitter: `_clarkzjw <https://twitter.com/_clarkzjw>`_
 - Mail to: `hello@jinwei.me <mailto:hello@jinwei.me>`_
 
+Links
+-----
+
+- `美元先生 <https://usdweekly.com/>`__
+- `Stray Episode <https://farer.org/>`__
+- `Sakeven <https://sakeven.me/>`__
+- `Justjjy <https://justjjy.com/>`__
+- `realityone <https://reality0ne.com/>`__
+
+
 Other
 -----
 
