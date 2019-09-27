@@ -102,7 +102,8 @@ Contact
 Links
 -----
 
-- `美元先生 <https://usdweekly.com/>`__
+- `Uucky's Wonderland <https://uuc.ky/>`__
+- `USDWeekly <https://usdweekly.com/>`__
 - `Stray Episode <https://farer.org/>`__
 - `Sakeven <https://sakeven.me/>`__
 - `Justjjy <https://justjjy.com/>`__
