@@ -154,8 +154,8 @@ Other
         
 - Dream travel:
 
-  - `Beijing – Moscow Train K3 <https://zh.wikipedia.org/wiki/K3/4%E6%AC%A1%E5%88%97%E8%BD%A6>`_
-  - `Korean Demilitarized Zone <https://en.wikipedia.org/wiki/Korean_Demilitarized_Zone>`_
+  - Taking `Beijing – Moscow Train K3 <https://zh.wikipedia.org/wiki/K3/4%E6%AC%A1%E5%88%97%E8%BD%A6>`_
+  - Visiting `Korean DMZ <https://en.wikipedia.org/wiki/Korean_Demilitarized_Zone>`_ from both sides.
 
 Credit
 ------
