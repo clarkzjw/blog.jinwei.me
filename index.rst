@@ -62,6 +62,7 @@ About me
 --------
 
 - Software engineer
+- Amateur HAMer(BG5DHM)
 - Estonian e-Resident
 - Programming with Python, Golang, C, etc
 - A user of Vim, Debian, OpenStack, Docker, Raspberry Pi, etc
