@@ -10,6 +10,10 @@ Hello World
 Updates
 -------
 
+- **Jan 2020**
+
+    - `2019年度总结 <https://medium.com/@clarkzjw/2019%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93-55eb4f242b26>`__
+
 - **June 2019**
 
     - `2019半年度总结 <https://medium.com/@clarkzjw/2019%E5%8D%8A%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93-ac59b681224>`__
