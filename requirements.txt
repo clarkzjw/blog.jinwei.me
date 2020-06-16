@@ -1,3 +1,4 @@
+setuptools==45
 alabaster==0.7.10
 git+https://github.com/clarkzjw/alagitpull.git
 Babel==2.5.1
@@ -13,7 +14,6 @@ MarkupSafe==1.0
 Pygments==2.2.0
 pytz==2017.3
 requests>=2.20.0
-setuptools==45
 six==1.11.0
 snowballstemmer==1.2.1
 Sphinx==1.6.6
