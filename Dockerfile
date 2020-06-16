@@ -1,8 +1,8 @@
-FROM python:3.7.0 as builder
+FROM python:3.8.0 as builder
 
 LABEL maintainer=clarkzjw<hello@jinwei.me>
 
-RUN pip install virtualenv
+RUN pip install virtualenv setuptools==45
 
 COPY requirements.txt /app/requirements.txt
 
