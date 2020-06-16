@@ -10,6 +10,10 @@ Hello World
 Updates
 -------
 
+- **June 2020**
+
+    - `COVID-19防疫纪念邮票对比 <https://stamp.jinwei.me/2020/06/15/covid-19-stamp/>`__
+
 - **Jan 2020**
 
     - `2019年度总结 <https://medium.com/@clarkzjw/2019%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93-55eb4f242b26>`__
