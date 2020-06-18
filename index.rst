@@ -12,6 +12,7 @@ Updates
 
 - **June 2020**
 
+    - `中華民國歷任總統就職紀念郵票 <https://stamp.jinwei.me/2020/06/18/roc-presidents-inauguration/>`__
     - `COVID-19防疫纪念邮票对比 <https://stamp.jinwei.me/2020/06/15/covid-19-stamp/>`__
 
 - **Jan 2020**
