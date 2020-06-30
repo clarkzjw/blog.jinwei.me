@@ -90,24 +90,13 @@ Publications
 - `Texture filtering based physically plausible image dehazing <https://link.springer.com/article/10.1007%2Fs00371-016-1259-3>`__
 - `暗通道先验图像去雾的大气光校验和光晕消除 <http://www.cjig.cn/jig/ch/reader/view_abstract.aspx?file_no=20160911&flag=1>`__
 
-Coding around the web
----------------------
-
-- `Dehaze`_, implementation of dark channel prior based image dehazing algorithms
-- `one-two-three...infinity`_, 📏 Calculating the sum from one to a billion in different programming languages, inspired by https://github.com/leachim6/hello-world
-- `brainfuck`_, 🙇 Simple Brainfuck interpreter implemented in C
-- GitHub `@clarkzjw <https://github.com/clarkzjw>`__ for recent / current coding
-
-.. _Dehaze: https://github.com/clarkzjw/Dehaze
-.. _one-two-three...infinity: https://github.com/clarkzjw/one-two-three...infinity
-.. _brainfuck: https://github.com/clarkzjw/brainfuck
-
 Contact
 -------
 
 - Feel free to contact me!
 - PGP: `0x1D017D3D <https://keybase.io/clarkzjw/pgp_keys.asc?fingerprint=b878c370cf7d871faa3c76637e1eb1851d017d3d>`_ | `keybase.io <https://keybase.io/clarkzjw>`_
-- Telegram: `@clarkzjw <https://t.me/clarkzjw>`_ | Twitter: `_clarkzjw <https://twitter.com/_clarkzjw>`_
+- Telegram: `@clarkzjw <https://t.me/clarkzjw>`_
+- Twitter: `_clarkzjw <https://twitter.com/_clarkzjw>`_
 - Mail to: `hello@jinwei.me <mailto:hello@jinwei.me>`_
 
 Links
@@ -124,7 +113,7 @@ Links
 Other
 -----
 
-- I am a volunteer of BOINC, supporting experiment like `World Community Grid`_ and `SETI@home`_
+- I was a volunteer of BOINC, supporting experiment like `World Community Grid`_ and `SETI@home`_
 
 - I think Freedom is my birth right and I shall have it, including free speech and free software
 
