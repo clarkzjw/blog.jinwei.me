@@ -27,7 +27,7 @@ release = '0.0'
 
 exclude_patterns = ['_build', '.venv', 'README.rst']
 
-pygments_style = 'sphinx'
+pygments_style = ''
 
 html_theme_path = [alagitpull.get_path()]
 html_theme = 'alagitpull'
