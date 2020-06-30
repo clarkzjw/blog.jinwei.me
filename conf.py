@@ -20,7 +20,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 project = u''
-copyright = u'2013 - 2019, clarkzjw'  # NOQA
+copyright = u'2013 - 2020, clarkzjw'  # NOQA
 
 version = '0.0'
 release = '0.0'
